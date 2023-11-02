@@ -2,7 +2,6 @@ name: test
 on: push          
 jobs:
   test:
-<<<<<<< HEAD
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -11,10 +10,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: All test
       run: bash -xv ./test.bash
-=======
-      runs-on: ubuntu-latest
+    
       steps:
       - uses: actions/checkout@v3
       - name: All test
         run: bash -xv ./test0.bash 
->>>>>>> cde7058e4eed1ad975e3ab5e5d6c381a6cc87415
+
